@@ -8,26 +8,26 @@ export default {
   components: {
     AppHeaderLogo,
     AppheaderNavbar,
-  }
-
-  
+  },
 };
 </script>
 
 <template>
-  <header >
-    <div class="container d-flex justify-content-between">
-      <AppHeaderLogo/>
-      <AppheaderNavbar/>
+  <header>
+    <div
+      class="header-container container d-flex justify-content-between align-items-center"
+    >
+      <AppHeaderLogo />
+      <AppheaderNavbar />
     </div>
-    
   </header>
-  
-  
 </template>
 
 <style scoped lang="scss">
 header {
   background-color: green;
+  .header-container {
+    padding: 30px 0;
+  }
 }
 </style>
