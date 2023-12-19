@@ -1,7 +1,5 @@
 <script>
-import AppMainInfo from './components-main/AppMainInfo.vue';
-import AppMainPresentation from './components-main/AppMainPresentation.vue';
-import AppMainSocials from './components-main/AppMainSocials.vue';
+import MainCourseCaracteristics from './components-main/MainCourseCaracteristics.vue';
 import AppMainNewsLetter from './components-main/AppMainNewsLetter.vue';
 import AppMainPlans from './components-main/AppMainPlans.vue';
 import AppMainArticles from './components-main/AppMainArticles.vue';
@@ -13,9 +11,8 @@ export default {
   name: 'AppMain',
 
   components: {
-    AppMainPresentation,
-    AppMainInfo,
-    AppMainSocials,
+    MainCourseCaracteristics,
+
     AppMainNewsLetter,
     AppMainPlans,
     AppMainArticles,
@@ -28,11 +25,11 @@ export default {
 
 <template>
   <main>
+    <!-- come devo tener conto della responsivita' -->
     <!-- considerare la possibilita di ragruppare dei componenti per greare dei
   sottogruppi -->
-    <AppMainInfo />
-    <AppMainPresentation />
-    <AppMainSocials />
+    <MainCourseCaracteristics />
+
     <AppMainNewsLetter />
     <AppMainPlans />
     <AppMainArticles />
