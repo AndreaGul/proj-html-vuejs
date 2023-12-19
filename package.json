@@ -10,6 +10,8 @@
     "prova": "cd .."
   },
   "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.2",
     "vue": "^3.3.8"
   },
   "devDependencies": {
