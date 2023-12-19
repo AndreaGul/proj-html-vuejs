@@ -27,17 +27,19 @@ export default {
 </script>
 
 <template>
-  //considerare la possibilita di ragruppare dei componenti per greare dei
-  sottogruppi
-  <AppMainInfo />
-  <AppMainPresentation />
-  <AppMainSocials />
-  <AppMainNewsLetter />
-  <AppMainPlans />
-  <AppMainArticles />
-  <AppMainSellBanner />
-  <AppMainSponsor />
-  <AppMainSuggestions />
+  <main>
+    <!-- considerare la possibilita di ragruppare dei componenti per greare dei
+  sottogruppi -->
+    <AppMainInfo />
+    <AppMainPresentation />
+    <AppMainSocials />
+    <AppMainNewsLetter />
+    <AppMainPlans />
+    <AppMainArticles />
+    <AppMainSellBanner />
+    <AppMainSponsor />
+    <AppMainSuggestions />
+  </main>
 </template>
 
 <style scoped lang="scss"></style>
