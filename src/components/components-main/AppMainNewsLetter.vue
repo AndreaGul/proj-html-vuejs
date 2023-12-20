@@ -10,7 +10,7 @@ export default {
       <h5>a</h5>
       <h2>a</h2>
       <div><button>a</button><button>a</button></div>
-      <p>a</p>
+      <p class="m-0">a</p>
     </div>
   </div>
 </template>
