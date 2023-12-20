@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-  <div class="row">
+  <div class="row m-0">
     <div class="col-6 big-card-container">
       <div class="big-card">a</div>
     </div>
@@ -48,6 +48,7 @@ export default {
     width: 100%;
     position: absolute;
     top: -60px;
+    right: 0;
 
     background-color: red;
 
