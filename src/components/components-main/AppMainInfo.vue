@@ -35,9 +35,9 @@ export default {
 <style scoped lang="scss">
 .container-info {
   position: relative;
-
   background-image: url('/img/slider82x-scaled.jpg');
   background-size: cover;
+  padding-bottom: 200px;
   .advices-buttons {
     position: absolute;
     top: 50px;
