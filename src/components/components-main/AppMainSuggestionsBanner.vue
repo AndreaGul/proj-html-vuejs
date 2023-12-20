@@ -11,7 +11,7 @@ export default {
         <button>a</button>
         <h2>a</h2>
         <h5>a</h5>
-        <p>a</p>
+        <p class="m-0">a</p>
       </div>
     </div>
   </div>
