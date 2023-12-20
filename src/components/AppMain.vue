@@ -12,7 +12,6 @@ export default {
 
   components: {
     MainCourseCaracteristics,
-
     AppMainNewsLetter,
     AppMainPlans,
     AppMainArticles,

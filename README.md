@@ -1,6 +1,3 @@
-# VueJS Vite starting template
+# Avada Fitness
 
-```
-npm install
-npm run dev
-```
+domandare che cosa sono quelle onde sotto al titolo
