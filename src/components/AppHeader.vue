@@ -24,8 +24,10 @@ export default {
 </template>
 
 <style scoped lang="scss">
+@use 'src/assets/scss/partial/_variables.scss' as *;
+
 header {
-  background-color: green;
+  background-color: $primary-bg-black;
   .header-container {
     padding: 30px 0;
   }

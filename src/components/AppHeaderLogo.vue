@@ -11,10 +11,6 @@ export default {
 </template>
 
 <style scoped lang="scss">
-.debug {
-  background-color: blue;
-}
-
 .img-container {
   img {
     display: block;
