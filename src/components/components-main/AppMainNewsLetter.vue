@@ -4,6 +4,20 @@ export default {
 };
 </script>
 
-<template></template>
+<template>
+  <div class="news-letter-container">
+    <div class="container">
+      <h5>a</h5>
+      <h2>a</h2>
+      <div><button>a</button><button>a</button></div>
+      <p>a</p>
+    </div>
+  </div>
+</template>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.news-letter-container {
+  background-image: url('src/assets/img/banner1-2x.jpg');
+  background-size: cover;
+}
+</style>
