@@ -37,7 +37,7 @@ export default {
 @use 'src/assets/scss/partial/_variables.scss' as *;
 
 .plans-container {
-  background-color: $primary-plans-black;
+  background-color: $primary-bg-black;
   .plans {
     color: white;
   }
