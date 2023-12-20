@@ -10,16 +10,14 @@ export default {
     AppHeader,
     AppMain,
     AppFooter,
-  }
-  
+  },
 };
 </script>
 
 <template>
-  <AppHeader/>
-  <AppMain/>
-  <AppFooter/>
-  
+  <AppHeader />
+  <AppMain />
+  <AppFooter />
 </template>
 
 <style scoped lang="scss"></style>
