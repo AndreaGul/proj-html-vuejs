@@ -5,7 +5,7 @@ import AppMainPlans from './components-main/AppMainPlans.vue';
 import AppMainArticles from './components-main/AppMainArticles.vue';
 import AppMainSellBanner from './components-main/AppMainSellBanner.vue';
 import AppMainSponsor from './components-main/AppMainSponsor.vue';
-import AppMainSuggestions from './components-main/AppMainSuggestions.vue';
+import AppMainSuggestionsBanner from './components-main/AppMainSuggestionsBanner.vue';
 
 export default {
   name: 'AppMain',
@@ -17,7 +17,7 @@ export default {
     AppMainArticles,
     AppMainSellBanner,
     AppMainSponsor,
-    AppMainSuggestions,
+    AppMainSuggestionsBanner,
   },
 };
 </script>
@@ -34,7 +34,7 @@ export default {
     <AppMainArticles />
     <AppMainSellBanner />
     <AppMainSponsor />
-    <AppMainSuggestions />
+    <AppMainSuggestionsBanner />
   </main>
 </template>
 
