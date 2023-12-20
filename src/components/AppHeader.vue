@@ -27,6 +27,7 @@ export default {
 @use 'src/assets/scss/partial/_variables.scss' as *;
 
 header {
+  font-family: 'Roboto', sans-serif;
   background-color: $primary-bg-black;
   .header-container {
     padding: 30px 0;
