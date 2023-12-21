@@ -4,7 +4,8 @@ export default {
 
   data() {
     return {
-      bigImgVideo: 'public/img/service3.jpg',
+      bigImgVideo: '/img/service3.jpg',
+      channelLogo: '/img/youtube-channel-logo.jpg',
     };
   },
 };
@@ -20,18 +21,33 @@ export default {
         </button>
       </div>
     </div>
-    <div class="col-6">
-      <h5>a</h5>
-      <h2>a</h2>
-      <div class="d-flex align-items-center">
-        <div>a</div>
+    <div class="col-6 text-container">
+      <h4>Tune up your workouts</h4>
+      <h2>The best health & fitness advice online</h2>
+      <div class="d-flex align-items-center channel-part">
+        <div><img :src="channelLogo" alt="img not found" /></div>
         <div>
-          <p>a</p>
-          <div><button>a</button><button>a</button></div>
+          <h6>ThemeFusion</h6>
+          <div>
+            <button class="left-button">
+              <font-awesome-icon
+                class="font-awesome-youtube"
+                icon="fa-brands fa-youtube"
+              />
+              YouTube</button
+            ><button class="right-button">999+</button>
+          </div>
         </div>
       </div>
-      <p>a</p>
-      <button>a</button>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse incidunt
+        ea provident est, sed ad error eum, ipsa porro tempore voluptatem
+        exercitationem.
+      </p>
+      <button class="default-button-red">
+        <font-awesome-icon icon="fa-brands fa-youtube" /> Visit my YouTube
+        channel
+      </button>
     </div>
   </div>
   <div class="container">
@@ -67,6 +83,7 @@ export default {
   }
   .big-card {
     width: 100%;
+
     position: relative;
     top: -60px;
     right: 0;
@@ -83,6 +100,45 @@ export default {
       left: 50%;
       transform: translate(-50%, -50%);
     }
+  }
+}
+
+.text-container {
+  padding: 136px;
+  h4 {
+    font-size: 22px;
+    color: $primary-button-blue;
+    margin-bottom: 55px;
+  }
+  h2 {
+    font-size: 60px;
+  }
+  .channel-part {
+    padding-bottom: 40px;
+    color: $primary-text-grey;
+    img {
+      display: block;
+      margin-right: 12px;
+    }
+    .left-button {
+      background-color: $primary-bg-subscribe-btn;
+      color: #ffffff;
+      border: $primary-bg-subscribe-btn solid 1px;
+      .font-awesome-youtube {
+        font-size: 18px;
+        transform: translate(0, 5%);
+      }
+    }
+
+    .right-button {
+      color: $primary-text-grey;
+      border: $primary-text-light-grey solid 1px;
+    }
+  }
+  p {
+    font-size: 20px;
+    padding-bottom: 40px;
+    color: $primary-text-black-purple;
   }
 }
 </style>
