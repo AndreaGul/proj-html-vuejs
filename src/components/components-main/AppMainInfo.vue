@@ -8,7 +8,7 @@ export default {
   <div class="container-info">
     <div class="fade-gradient">
       <div class="container d-flex align-items-center justify-content-between">
-        <div>
+        <section>
           <h4>Certified fitness professional</h4>
           <h1>Take control of your health</h1>
           <hr />
@@ -23,9 +23,11 @@ export default {
           <button class="default-button-black">
             Buy Avada today <font-awesome-icon icon="fa-solid fa-arrow-right" />
           </button>
-        </div>
+        </section>
         <div>
-          <button>a</button>
+          <button class="play-button">
+            <font-awesome-icon icon="fa-solid fa-play" />
+          </button>
         </div>
       </div>
 
@@ -83,6 +85,7 @@ export default {
     .default-button-blu {
       margin-right: 12px;
     }
+
     .advices-buttons {
       position: absolute;
       top: 50px;

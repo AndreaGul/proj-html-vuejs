@@ -22,8 +22,9 @@ import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faPlay } from '@fortawesome/free-solid-svg-icons';
 
 /* add icons to the library */
-library.add(faMagnifyingGlass, faCartShopping, faYoutube, faArrowRight);
+library.add(faMagnifyingGlass, faCartShopping, faYoutube, faArrowRight, faPlay);
 
 createApp(App).component('font-awesome-icon', FontAwesomeIcon).mount('#app');
