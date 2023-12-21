@@ -6,13 +6,30 @@ export default {
     return {
       bigImgVideo: '/img/service3.jpg',
       channelLogo: '/img/youtube-channel-logo.jpg',
+      videos: [
+        {
+          img: '/img/video1-2x.jpg',
+          title: 'Thingh & glute workout',
+          note: 'Increase your mobility',
+        },
+        {
+          img: '/img/video2-2x.jpg',
+          title: 'lift, firm & perk up',
+          note: 'Feel young again',
+        },
+        {
+          img: '/img/video3-2x.jpg',
+          title: 'Slim & trim your waist',
+          note: 'Shed those extra pounds',
+        },
+      ],
     };
   },
 };
 </script>
 
 <template>
-  <div class="row m-0 g-0">
+  <div class="row m-0 g-0 align-item-center">
     <div class="col-6 big-card-container">
       <div class="big-card angle-card">
         <img :src="bigImgVideo" alt="Img not found" />
@@ -51,19 +68,28 @@ export default {
     </div>
   </div>
   <div class="container">
-    <div class="d-flex justify-content-between">
-      <h5>a</h5>
-      <h5>a</h5>
+    <div class="upper-video-text d-flex justify-content-between">
+      <h3 class="m-0">Featured playlists</h3>
+      <a href="#"
+        ><h6 class="m-0">
+          View all Videos
+          <font-awesome-icon icon="fa-solid fa-angle-right" /></h6
+      ></a>
     </div>
-    <div class="row text-center">
-      <!-- come per le card sopra anche qui mi posso creare un oggetto con alliterno i vari dati dei video da inserire con un ciclo -->
-      <div class="col-4">
-        <div>a</div>
-        <h5>a</h5>
-        <p>a</p>
+    <div class="video-container d-flex text-center">
+      <div v-for="video in videos" class="yt-video">
+        <div class="vid-img-container angle-card">
+          <img :src="video.img" alt="img not found" />
+          <button class="play-button">
+            <font-awesome-icon
+              class="icon-play-button"
+              icon="fa-solid fa-play"
+            />
+          </button>
+        </div>
+        <h4 class="m-0">{{ video.title }}</h4>
+        <p>{{ video.note }}</p>
       </div>
-      <div class="col-4">a</div>
-      <div class="col-4">a</div>
     </div>
   </div>
 </template>
@@ -139,6 +165,67 @@ export default {
     font-size: 20px;
     padding-bottom: 40px;
     color: $primary-text-black-purple;
+  }
+}
+
+.upper-video-text {
+  margin-bottom: 46px;
+  a {
+    text-decoration: none;
+    color: #000000;
+
+    h6 {
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+}
+.video-container {
+  gap: 52px;
+  margin-bottom: 160px;
+  .yt-video {
+    width: calc((100% - 104px) / 3);
+
+    .vid-img-container::after {
+      content: '';
+      z-index: 5;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $primary-bg-black-ligher-trasparent;
+    }
+    .vid-img-container {
+      width: 100%;
+      position: relative;
+      margin-bottom: 36px;
+
+      img {
+        width: 100%;
+        display: block;
+      }
+
+      .play-button {
+        height: 55px;
+        width: 55px;
+        font-size: 14px;
+        z-index: 10;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        .icon-play-button {
+          vertical-align: -0.2rem;
+        }
+      }
+    }
+    p {
+      margin-top: 14px;
+      font-weight: 500;
+      color: $primary-text-blue;
+    }
   }
 }
 </style>

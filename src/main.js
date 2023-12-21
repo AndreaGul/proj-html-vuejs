@@ -24,6 +24,7 @@ import { faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { faPlay } from '@fortawesome/free-solid-svg-icons';
 import { faCampground } from '@fortawesome/free-solid-svg-icons';
+import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
 
 /* add icons to the library */
 library.add(
@@ -32,7 +33,8 @@ library.add(
   faYoutube,
   faArrowRight,
   faPlay,
-  faCampground
+  faCampground,
+  faAngleRight
 );
 
 createApp(App).component('font-awesome-icon', FontAwesomeIcon).mount('#app');
