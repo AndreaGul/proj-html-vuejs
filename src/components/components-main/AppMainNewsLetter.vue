@@ -11,7 +11,7 @@ export default {
         <div class="main-container">
           <section>
             <h4>Join our mailing list today</h4>
-            <h1>Insider offers & flash sales in you inbox every week.</h1>
+            <h2>Insider offers & flash sales in you inbox every week.</h2>
             <hr class="hr-separator" />
             <div class="interaction-container">
               <input
@@ -55,7 +55,7 @@ export default {
         color: $primary-text-red;
         margin-bottom: 35px;
       }
-      h1 {
+      h2 {
         color: $primary-text-white;
         font-size: 60px;
         margin-bottom: 50px;
@@ -81,6 +81,3 @@ export default {
   }
 }
 </style>
-
-.news-letter-container { background-image: url('src/assets/img/banner1-2x.jpg');
-background-size: cover; }

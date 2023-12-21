@@ -28,6 +28,8 @@ import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
 import { faStopwatch } from '@fortawesome/free-solid-svg-icons';
 import { faDumbbell } from '@fortawesome/free-solid-svg-icons';
 import { faBowlFood } from '@fortawesome/free-solid-svg-icons';
+import { faGripLines } from '@fortawesome/free-solid-svg-icons';
+import { faWaveSquare } from '@fortawesome/free-solid-svg-icons';
 
 /* add icons to the library */
 library.add(
@@ -40,7 +42,9 @@ library.add(
   faAngleRight,
   faStopwatch,
   faDumbbell,
-  faBowlFood
+  faBowlFood,
+  faGripLines,
+  faWaveSquare
 );
 
 createApp(App).component('font-awesome-icon', FontAwesomeIcon).mount('#app');
