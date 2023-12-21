@@ -15,8 +15,8 @@ export default {
           <h1>Take control of your health</h1>
           <hr class="hr-separator" />
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum
-            cupiditate
+            Curabjur non nulla sit amet nisl tempus convallis quis ac lectus
+            dolor sit amet.
           </p>
           <button class="default-button-blu">
             <font-awesome-icon icon="fa-brands fa-youtube" /> Visit my YouTube
@@ -72,12 +72,14 @@ export default {
       h1 {
         color: $primary-text-white;
         font-size: 60px;
+        margin-bottom: 35px;
       }
 
       p {
         color: $primary-text-grey;
         font-size: 18px;
         font-weight: 500;
+        margin: 40px 0;
       }
 
       .default-button-blu {

@@ -46,9 +46,8 @@ export default {
       </div>
       <div class="text-center text-part">
         <p>
-          "Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          Necessitatibus similique labore dolorem, quisquam commodi, repellendus
-          modi"
+          "How you respond to the challenge in the second half will determine
+          what you become after the game, whether you are a winner or a loser."
         </p>
 
         <hr class="hr-separator" />

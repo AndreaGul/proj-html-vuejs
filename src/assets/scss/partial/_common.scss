@@ -40,6 +40,15 @@ COMMON
   padding: 16px 30px;
   border-radius: 55px;
 }
+
+.default-input-white {
+  font-weight: 600;
+  color: $primary-text-grey;
+  background-color: #ffffff;
+  border: none;
+  padding: 16px 30px;
+  border-radius: 55px;
+}
 .play-button {
   height: 100px;
   width: 100px;
