@@ -58,6 +58,7 @@ export default {
 .container-info {
   background-image: url('/img/slider82x-scaled.jpg');
   background-size: cover;
+  background-position: center top;
   .fade-gradient {
     background: linear-gradient(
       90deg,

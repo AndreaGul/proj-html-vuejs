@@ -43,6 +43,7 @@ export default {
 .container-news-letter {
   background-image: url('src/assets/img/banner1-2x.jpg');
   background-size: cover;
+  background-position: center top;
   .fade-gradient {
     background: linear-gradient(
       90deg,

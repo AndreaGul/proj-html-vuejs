@@ -35,6 +35,7 @@ export default {
 .sell-banner-container {
   background-image: url('src/assets/img/banner2-2x.jpg');
   background-size: cover;
+  background-position: center top;
   .fade-gradient {
     background: linear-gradient(
       0deg,

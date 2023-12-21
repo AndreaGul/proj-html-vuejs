@@ -24,7 +24,7 @@ export default {
 .suggestions-banner-container {
   background-image: url('src/assets/img/banner14-2x.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: center bottom;
   color: $primary-text-white;
 
   .gradient-banner {
