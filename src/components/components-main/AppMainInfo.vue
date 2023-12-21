@@ -13,7 +13,7 @@ export default {
         <section>
           <h4>Certified fitness professional</h4>
           <h1>Take control of your health</h1>
-          <hr />
+          <hr class="hr-separator" />
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum
             cupiditate
@@ -72,13 +72,6 @@ export default {
       h1 {
         color: $primary-text-white;
         font-size: 60px;
-      }
-
-      hr {
-        color: $primary-bg-yellow;
-        width: 150px;
-        border-top: 8px solid $primary-bg-yellow;
-        border-radius: 5px;
       }
 
       p {

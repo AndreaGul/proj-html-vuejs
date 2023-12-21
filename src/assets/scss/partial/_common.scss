@@ -45,3 +45,10 @@ COMMON
   overflow: hidden;
   border-radius: 3px 3px 40px 3px;
 }
+
+.hr-separator {
+  color: $primary-bg-yellow;
+  width: 150px;
+  border-top: 8px solid $primary-bg-yellow;
+  border-radius: 5px;
+}

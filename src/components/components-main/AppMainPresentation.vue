@@ -34,8 +34,9 @@ export default {
         <div v-for="service in services" class="p-0 angle-card">
           <div class="img-container">
             <img :src="service.img" :alt="service.title" />
+
             <div class="text-container">
-              <hr />
+              <hr class="hr-separator" />
               <h5>{{ service.title }}</h5>
               <p>{{ service.note }}</p>
             </div>
@@ -76,17 +77,48 @@ export default {
       gap: 55px;
       .angle-card {
         width: calc((100% - 55px) / 3);
+        .img-container::before {
+          content: '';
+          z-index: 1;
+          background: linear-gradient(
+            0deg,
+            $primary-bg-black 0,
+            $primary-bg-black-trasparent 50%
+          );
+          position: absolute;
+          height: 100%;
+          width: 100%;
+        }
         .img-container {
           width: 100%;
           position: relative;
+
           img {
             width: 100%;
           }
 
           .text-container {
             position: absolute;
+            z-index: 10;
             left: 40px;
             bottom: 40px;
+
+            .hr-separator {
+              color: $primary-text-white;
+              width: 50px;
+              border-top: 8px solid $primary-text-white;
+            }
+
+            h5 {
+              color: $primary-text-white;
+              font-size: 24px;
+              font-weight: 600;
+            }
+            p {
+              color: $primary-bg-yellow;
+              font-size: 20px;
+              font-weight: 600;
+            }
           }
         }
       }
