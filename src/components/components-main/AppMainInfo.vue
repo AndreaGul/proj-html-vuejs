@@ -56,7 +56,7 @@ export default {
 @use 'src/assets/scss/partial/_variables.scss' as *;
 
 .container-info {
-  background-image: url('/img/slider82x-scaled.jpg');
+  background-image: url('src/assets/img/slider82x-scaled.jpg');
   background-size: cover;
   background-position: center top;
   .fade-gradient {

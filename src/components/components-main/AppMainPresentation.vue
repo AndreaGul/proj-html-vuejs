@@ -4,7 +4,7 @@ export default {
 
   data() {
     return {
-      profileImg: 'public/img/profile-img.jpg',
+      profileImg: '/img/profile-img.jpg',
       services: [
         {
           img: '/img/service1.jpg',
