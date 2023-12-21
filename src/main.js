@@ -17,10 +17,14 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
 /* import specific icons */
+import { faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
+import { faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
-import { faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { faPlay } from '@fortawesome/free-solid-svg-icons';
 import { faCampground } from '@fortawesome/free-solid-svg-icons';
@@ -33,9 +37,13 @@ import { faWaveSquare } from '@fortawesome/free-solid-svg-icons';
 
 /* add icons to the library */
 library.add(
+  faYoutube,
+  faFacebookF,
+  faTwitter,
+  faInstagram,
+  faLinkedinIn,
   faMagnifyingGlass,
   faCartShopping,
-  faYoutube,
   faArrowRight,
   faPlay,
   faCampground,
