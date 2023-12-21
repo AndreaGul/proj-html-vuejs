@@ -18,6 +18,16 @@ COMMON
   color: $primary-text-white;
   background-color: $primary-button-blue;
   border: none;
-  padding: 16px 30px 12px 30px;
+  padding: 16px 30px;
+  border-radius: 55px;
+}
+
+.default-button-black {
+  font-weight: 600;
+  color: $primary-text-grey;
+  background-color: $primary-bg-black;
+
+  border: $primary-text-dark-grey solid 4px;
+  padding: 16px 30px;
   border-radius: 55px;
 }

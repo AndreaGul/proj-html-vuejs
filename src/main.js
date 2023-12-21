@@ -20,8 +20,10 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+import { faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 /* add icons to the library */
-library.add(faMagnifyingGlass, faCartShopping);
+library.add(faMagnifyingGlass, faCartShopping, faYoutube, faArrowRight);
 
 createApp(App).component('font-awesome-icon', FontAwesomeIcon).mount('#app');
