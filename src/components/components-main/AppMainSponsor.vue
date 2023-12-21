@@ -47,13 +47,14 @@ export default {
           <font-awesome-icon icon="fa-solid fa-wave-square" />
         </div>
         <p>{{ sponsor.paragraf }}</p>
-        <h5>
-          {{ sponsor.note }}
-          <font-awesome-icon
-            class="angle-awesome-icon"
-            icon="fa-solid fa-angle-right"
-          />
-        </h5>
+        <a href="#" class="link-sponsor-note"
+          ><h5>
+            {{ sponsor.note }}
+            <font-awesome-icon
+              class="angle-awesome-icon"
+              icon="fa-solid fa-angle-right"
+            /></h5
+        ></a>
       </div>
     </div>
   </div>
@@ -89,6 +90,11 @@ export default {
 
     .angle-awesome-icon {
       font-size: 16px;
+    }
+
+    .link-sponsor-note {
+      text-decoration: none;
+      color: #000000;
     }
   }
 }
