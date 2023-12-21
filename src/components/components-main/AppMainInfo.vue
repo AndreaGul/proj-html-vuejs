@@ -44,7 +44,9 @@ export default {
           <p class="m-0">Demos</p>
         </button>
         <button class="advices-button">
-          <h2 class="m-0 sale-prize">$39</h2>
+          <h2 class="m-0 sale-prize">
+            <span class="special-dollar">$</span>39
+          </h2>
           <p class="m-0">On Sale</p>
         </button>
       </div>
@@ -113,6 +115,10 @@ export default {
         color: $primary-text-dark-blue;
         font-weight: 500;
 
+        .special-dollar {
+          vertical-align: top;
+          font-size: 20px;
+        }
         .sale-prize {
           color: $primary-text-green-fluo;
           font-weight: 700;
