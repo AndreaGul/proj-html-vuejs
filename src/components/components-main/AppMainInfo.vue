@@ -42,7 +42,7 @@ export default {
         </button>
         <button class="advices-button">
           <h2 class="m-0 sale-prize">$39</h2>
-          <p class="m-0">On Sael</p>
+          <p class="m-0">On Sale</p>
         </button>
       </div>
     </div>
@@ -89,6 +89,10 @@ export default {
 
       .default-button-blu {
         margin-right: 12px;
+      }
+
+      .play-button {
+        margin: 0 100px;
       }
     }
 
