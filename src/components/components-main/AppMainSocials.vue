@@ -1,13 +1,24 @@
 <script>
 export default {
   name: 'AppMainSocials',
+
+  data() {
+    return {
+      bigImgVideo: 'public/img/service3.jpg',
+    };
+  },
 };
 </script>
 
 <template>
-  <div class="row m-0">
+  <div class="row m-0 g-0">
     <div class="col-6 big-card-container">
-      <div class="big-card">a</div>
+      <div class="big-card angle-card">
+        <img :src="bigImgVideo" alt="Img not found" />
+        <button class="play-button">
+          <font-awesome-icon icon="fa-solid fa-play" />
+        </button>
+      </div>
     </div>
     <div class="col-6">
       <h5>a</h5>
@@ -42,17 +53,36 @@ export default {
 </template>
 
 <style scoped lang="scss">
+@use 'src/assets/scss/partial/_variables.scss' as *;
 .big-card-container {
-  position: relative;
+  .big-card::after {
+    content: '';
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $primary-bg-black-ligher-trasparent;
+  }
   .big-card {
     width: 100%;
-    position: absolute;
+    position: relative;
     top: -60px;
     right: 0;
 
     background-color: red;
+    img {
+      width: 100%;
+    }
 
-    height: 100px;
+    .play-button {
+      z-index: 10;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
 }
 </style>
