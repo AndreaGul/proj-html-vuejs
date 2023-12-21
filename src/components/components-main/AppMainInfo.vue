@@ -7,7 +7,9 @@ export default {
 <template>
   <div class="container-info">
     <div class="fade-gradient">
-      <div class="container d-flex align-items-center justify-content-between">
+      <div
+        class="main-container container d-flex align-items-center justify-content-between"
+      >
         <section>
           <h4>Certified fitness professional</h4>
           <h1>Take control of your health</h1>
@@ -32,14 +34,16 @@ export default {
       </div>
 
       <div class="advices-buttons">
-        <div>
-          <p class="m-0">a</p>
-          <p class="m-0">a</p>
-        </div>
-        <div>
-          <p class="m-0">a</p>
-          <p class="m-0">a</p>
-        </div>
+        <button class="advices-button">
+          <h2 class="m-0">
+            <font-awesome-icon icon="fa-solid fa-campground" />
+          </h2>
+          <p class="m-0">Demos</p>
+        </button>
+        <button class="advices-button">
+          <h2 class="m-0 sale-prize">$39</h2>
+          <p class="m-0">On Sael</p>
+        </button>
       </div>
     </div>
   </div>
@@ -61,35 +65,56 @@ export default {
     padding-bottom: 204px;
     position: relative;
 
-    h4 {
-      color: $primary-text-red;
-    }
-    h1 {
-      color: $primary-text-white;
-      font-size: 60px;
-    }
+    .main-container {
+      h4 {
+        color: $primary-text-red;
+      }
+      h1 {
+        color: $primary-text-white;
+        font-size: 60px;
+      }
 
-    hr {
-      color: $primary-bg-yellow;
-      width: 150px;
-      border-top: 8px solid $primary-bg-yellow;
-      border-radius: 5px;
-    }
+      hr {
+        color: $primary-bg-yellow;
+        width: 150px;
+        border-top: 8px solid $primary-bg-yellow;
+        border-radius: 5px;
+      }
 
-    p {
-      color: $primary-text-grey;
-      font-size: 18px;
-      font-weight: 500;
-    }
+      p {
+        color: $primary-text-grey;
+        font-size: 18px;
+        font-weight: 500;
+      }
 
-    .default-button-blu {
-      margin-right: 12px;
+      .default-button-blu {
+        margin-right: 12px;
+      }
     }
 
     .advices-buttons {
       position: absolute;
       top: 50px;
-      right: 0;
+      right: 14px;
+      color: $primary-text-dark-blue;
+
+      .advices-button {
+        text-align: center;
+        display: block;
+        width: 70px;
+        height: 70px;
+        background-color: #ffffff;
+        border: none;
+        border-radius: 4px;
+        margin-bottom: 6px;
+        color: $primary-text-dark-blue;
+        font-weight: 500;
+
+        .sale-prize {
+          color: $primary-text-green-fluo;
+          font-weight: 700;
+        }
+      }
     }
   }
 }
