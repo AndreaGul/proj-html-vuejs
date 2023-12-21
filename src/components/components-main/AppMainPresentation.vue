@@ -86,8 +86,12 @@ export default {
     .card-container {
       gap: 55px;
 
+      .angle-card:hover {
+        transform: scale(1.1);
+      }
       .angle-card {
         width: calc((100% - 110px) / 3);
+        cursor: pointer;
         .awesome-separator {
           color: #ffffff;
           font-size: 20px;

@@ -70,12 +70,17 @@ export default {
   padding: 120px 0;
   .plans-container {
     gap: 55px;
+
+    .plans:hover {
+      transform: scale(1.1);
+    }
     .plans {
       width: calc((100% - 110px) / 3);
       color: white;
       border: solid 5px $primary-boreder-blue;
       border-radius: 5px;
       padding: 80px 44px;
+      cursor: pointer;
       .icon-awesome {
         font-size: 60px;
         margin-bottom: 30px;
