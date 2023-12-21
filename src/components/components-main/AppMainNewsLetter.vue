@@ -12,7 +12,10 @@ export default {
           <section>
             <h4>Join our mailing list today</h4>
             <h2>Insider offers & flash sales in you inbox every week.</h2>
-            <hr class="hr-separator" />
+            <div class="awesome-separator">
+              <font-awesome-icon icon="fa-solid fa-wave-square" />
+              <font-awesome-icon icon="fa-solid fa-wave-square" />
+            </div>
             <div class="interaction-container">
               <input
                 class="default-input-white"

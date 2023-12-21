@@ -13,6 +13,7 @@ export default {
           </h2>
           <div class="awesome-separator">
             <font-awesome-icon icon="fa-solid fa-wave-square" />
+            <font-awesome-icon icon="fa-solid fa-wave-square" />
           </div>
           <p>
             Arcu auctor gravida nisl, congue sit nisi tincidunt eget proin. In
@@ -55,10 +56,6 @@ export default {
         margin-bottom: 50px;
       }
 
-      .awesome-separator {
-        color: $primary-bg-yellow;
-        font-size: 40px;
-      }
       p {
         color: $primary-text-white;
         font-size: 18px;

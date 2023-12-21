@@ -37,7 +37,10 @@ export default {
             <img :src="service.img" :alt="service.title" />
 
             <div class="text-container">
-              <hr class="hr-separator" />
+              <div class="awesome-separator">
+                <font-awesome-icon icon="fa-solid fa-wave-square" />
+                <font-awesome-icon icon="fa-solid fa-wave-square" />
+              </div>
               <h5>{{ service.title }}</h5>
               <p>{{ service.note }}</p>
             </div>
@@ -50,7 +53,10 @@ export default {
           what you become after the game, whether you are a winner or a loser."
         </p>
 
-        <hr class="hr-separator" />
+        <div class="awesome-separator">
+          <font-awesome-icon icon="fa-solid fa-wave-square" />
+          <font-awesome-icon icon="fa-solid fa-wave-square" />
+        </div>
         <div
           class="profile-info d-flex justify-content-center align-items-center"
         >
@@ -82,6 +88,10 @@ export default {
 
       .angle-card {
         width: calc((100% - 110px) / 3);
+        .awesome-separator {
+          color: #ffffff;
+          font-size: 20px;
+        }
         .img-container::before {
           content: '';
           z-index: 1;
@@ -108,12 +118,6 @@ export default {
             left: 40px;
             bottom: 40px;
 
-            .hr-separator {
-              color: $primary-text-white;
-              width: 50px;
-              border-top: 8px solid $primary-text-white;
-            }
-
             h5 {
               color: $primary-text-white;
               font-size: 24px;
@@ -136,9 +140,6 @@ export default {
         font-size: 36px;
         font-weight: 600;
         margin-bottom: 50px;
-      }
-      .hr-separator {
-        transform: translate(275%, 0);
       }
 
       .profile-info {

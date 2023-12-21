@@ -13,7 +13,10 @@ export default {
         <section>
           <h4>Certified fitness professional</h4>
           <h1>Take control of your health</h1>
-          <hr class="hr-separator" />
+          <div class="awesome-separator">
+            <font-awesome-icon icon="fa-solid fa-wave-square" />
+            <font-awesome-icon icon="fa-solid fa-wave-square" />
+          </div>
           <p>
             Curabjur non nulla sit amet nisl tempus convallis quis ac lectus
             dolor sit amet.
