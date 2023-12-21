@@ -49,7 +49,7 @@ export default {
           </ul>
         </div>
         <div class="col-4">
-          <ul>
+          <ul class="list-unstyled">
             <li><h5>CONTACT INFORMATIONS</h5></li>
             <li class="company-route">4746 Tipple Road Michigan 48449</li>
             <li><h6>Mobile : 1,800.000-0000</h6></li>
