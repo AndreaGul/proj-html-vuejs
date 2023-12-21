@@ -43,6 +43,7 @@ export default {
       <div v-for="video in videos" class="article">
         <div class="article-img-container">
           <img :src="video.img" alt="img not found" />
+          <div class="hover-shadow"></div>
         </div>
         <h4 class="m-0">{{ video.title }}</h4>
         <p>{{ video.note }}</p>
@@ -74,10 +75,28 @@ export default {
     .article {
       width: calc((100% - 104px) / 3);
 
+      .hover-shadow {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(
+          0rad,
+          $primary-text-blue 1%,
+          rgba(255, 255, 255, 0) 80%
+        );
+        z-index: 10;
+        opacity: 0;
+      }
+      .hover-shadow:hover {
+        opacity: 1;
+      }
       .article-img-container {
         width: 100%;
         cursor: pointer;
         margin-bottom: 36px;
+        position: relative;
 
         img {
           width: 100%;
