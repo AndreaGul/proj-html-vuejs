@@ -21,6 +21,9 @@ COMMON
   padding: 16px 30px;
   border-radius: 55px;
 }
+.default-button-blu:hover {
+  background-color: $primary-text-red;
+}
 
 .default-button-black {
   font-weight: 600;
@@ -30,6 +33,11 @@ COMMON
   border: $primary-text-dark-grey solid 4px;
   padding: 16px 30px;
   border-radius: 55px;
+}
+.default-button-black:hover {
+  background-color: #ffffff;
+  color: #000000;
+  border: #ffffff solid 4px;
 }
 
 .default-button-red {
