@@ -12,7 +12,7 @@ export default {
           <font-awesome-icon icon="fa-solid fa-play" />
         </button>
         <h2>Crossfit workout of the day</h2>
-        <h5>November 15thP019</h5>
+        <h5>November 15th,2019</h5>
         <p class="m-0">
           View all videos <font-awesome-icon icon="fa-solid fa-arrow-right" />
         </p>
